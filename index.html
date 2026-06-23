@@ -122,9 +122,9 @@
   .center { text-align: center; }
   .center .section-sub { margin-left: auto; margin-right: auto; }
 
-  .video-wrap { display: flex; justify-content: center; margin-top: 1.5rem; }
+  .video-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-top: 1.5rem; }
   .video-wrap video {
-    width: 100%; max-width: 700px; border-radius: 16px;
+    width: 100%; max-width: 460px; border-radius: 16px;
     box-shadow: 0 10px 30px rgba(75,21,40,0.18);
   }
 
@@ -161,7 +161,7 @@
 
   .gallery-strip { overflow: hidden; padding: 3rem 0; background: #4B1528; }
   .gallery-track {
-    display: flex; gap: 14px; animation: scroll 36s linear infinite;
+    display: flex; gap: 14px; animation: scroll 32s linear infinite;
     width: max-content;
   }
   .gallery-track img { width: 220px; height: 280px; object-fit: cover; border-radius: 12px; }
@@ -207,7 +207,7 @@
   footer .footer-socials { display: flex; gap: 14px; justify-content: center; margin-bottom: 1.2rem; }
   footer .footer-socials a {
     width: 36px; height: 36px; border-radius: 50%; border: 1px solid #5A3340;
-    display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600;
+    display: flex; align-items: center; justify-content: center; font-size: 15px;
   }
   footer .footer-bottom { font-size: 12px; color: #7A5462; }
 
@@ -254,7 +254,7 @@
       <a class="btn-ghost" href="#coleccion">Ver colección</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="num">3</div><div class="label">Generaciones</div></div>
+      <div class="stat"><div class="num">2</div><div class="label">Categorías</div></div>
       <div class="stat"><div class="num">100%</div><div class="label">A tu medida</div></div>
       <div class="stat"><div class="num">Bogotá</div><div class="label">Verbenal Norte</div></div>
     </div>
@@ -268,7 +268,10 @@
   <p class="section-sub center" style="margin: 0 auto;">Un vistazo rápido a nuestro espacio en Verbenal Norte.</p>
   <div class="video-wrap">
     <video controls muted loop playsinline poster="img/IMG_7390.jpg">
-      <source src="video/ANGEL_D_ROUSE_.mp4" type="video/mp4">
+      <source src="ANGEL%20D%20ROUSE%20.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop playsinline poster="img/IMG_7390.jpg">
+      <source src="VIDEO-2026-06-23-15-54-36.mp4" type="video/mp4">
     </video>
   </div>
 </section>
@@ -560,9 +563,126 @@
   <div class="why-grid" style="margin-top: 2rem;">
     <div class="why-item">
       <div class="why-num">01</div>
-      <h4>Diseños únicos</h4>
+      <h4>Diseños uniques</h4>
       <p>Cada prenda combina tendencia con personalidad propia, en colores que no encuentras en cualquier lugar.</p>
     </div>
     <div class="why-item">
       <div class="why-num">02</div>
-      <h4>Confección a
+      <h4>Confección a medida</h4>
+      <p>Si lo que buscas no está en exhibición, lo hacemos a tu medida en el mismo almacén.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-num">03</div>
+      <h4>Telas de calidad</h4>
+      <p>Trabajamos con telas nacionales e importadas seleccionadas para que cada prenda dure y se sienta bien.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-num">04</div>
+      <h4>En el corazón de Verbenal</h4>
+      <p>Fácil acceso para quienes viven o visitan el norte de Bogotá.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONFECCIÓN A MEDIDA -->
+<section class="tailor-section">
+  <div class="tailor-box">
+    <div class="icon">✂️</div>
+    <h3>Confección a medida</h3>
+    <p>Para la confección a medida, las medidas se toman directamente aquí en el almacén — te invitamos a visitarnos en Angel D' Rouse Boutique, de lunes a sábado 9am-9pm o domingos/festivos 10am-8pm. ¡Te esperamos!</p>
+    <p class="addr">📍 Angel D' Rouse Boutique, Verbenal Norte, Bogotá</p>
+  </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="section" id="ubicacion">
+  <p class="section-eyebrow center">Encuéntranos</p>
+  <h2 class="center">Estamos en <em class="serif">Verbenal Norte</em></h2>
+  <p class="section-sub center" style="margin: 0 auto 2.5rem;">Confirma horarios especiales por WhatsApp antes de tu visita.</p>
+
+  <div class="location-grid">
+    <div class="info-list">
+      <div class="info-item">
+        <div class="ico">📍</div>
+        <div><h4>Ubicación</h4><p>Angel D' Rouse Boutique, Bogotá, Colombia</p></div>
+      </div>
+      <div class="info-item">
+        <div class="ico">🕐</div>
+        <div><h4>Horario</h4><p>Lunes a sábado: 9:00am – 9:00pm<br>Domingos y festivos: 10:00am – 8:00pm</p></div>
+      </div>
+      <div class="info-item">
+        <div class="ico">📱</div>
+        <div><h4>WhatsApp</h4><p>+57 324 888 9587</p></div>
+      </div>
+      <div style="display:flex; gap:12px; margin-top: 0.5rem;">
+        <a class="btn-primary" href="https://wa.me/573248889587" target="_blank">Escribir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0269888187904!2d-74.03798262487307!3d4.765290141093958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85dc457497e9%3A0x24145eb737d2ca40!2sAngel%20D&#39;%20Rouse%20Boutique!5e0!3m2!1ses-419!2sco!4v1782230698362!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-band">
+  <h2>¿Lista para tu próximo look?</h2>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="https://wa.me/573248889587" target="_blank">Escribir por WhatsApp</a>
+    <a class="btn-ghost" href="#coleccion">Ver colección</a>
+  </div>
+</section>
+
+<!-- RESEÑAS GOOGLE MAPS -->
+<div style="background-color: #FAECE7; padding: 4rem 1.5rem; text-align: center; border-top: 1px solid #E8D5DC;">
+  <h2 style="font-family: 'Georgia', serif; font-style: italic; color: #4B1528; font-size: 30px; margin-bottom: 1rem;">¿Te encantó tu experiencia? ✨</h2>
+  <p style="color: #5F5E5A; max-width: 600px; margin: 0 auto 20px; font-size: 14px;">Tu opinión vale oro para nosotros. Ayúdanos a seguir creciendo en el barrio dejando una calificación de 5 estrellas en Google.</p>
+  <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+    <a class="btn-primary" href="https://www.google.com/maps/place/Angel+D'+Rouse+Boutique/data=!4m2!3m1!1s0x8e3f85dc457497e9:0x24145eb737d2ca40" target="_blank">⭐ Calificar en Google Maps</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-name">Angel D' Rouse Boutique</div>
+  <div class="footer-links">
+    <a href="#coleccion">Colección</a>
+    <a href="#galeria">Galería</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#ubicacion">Ubicación</a>
+  </div>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/angeldrouseshop/" target="_blank">IG</a>
+    <a href="https://web.facebook.com/profile.php?id=61591400095695" target="_blank">FB</a>
+    <a href="https://www.tiktok.com/@angeldrouse" target="_blank">TT</a>
+    <a href="https://wa.me/573248889587" target="_blank">📱</a>
+  </div>
+  <div class="footer-bottom">Angel D' Rouse Boutique · Verbenal Norte, Bogotá</div>
+</footer>
+
+<script>
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('#catalog-grid .card');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'todos' || card.dataset.cat === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
