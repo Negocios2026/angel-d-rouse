@@ -15,207 +15,101 @@
   }
   .serif { font-family: 'Georgia', serif; font-style: italic; }
   a { color: inherit; text-decoration: none; }
-
   nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 24px;
-    background: rgba(75,21,40,0.0);
-    transition: background 0.3s;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px; background: rgba(75,21,40,0.0); transition: background 0.3s;
   }
   nav.scrolled { background: rgba(75,21,40,0.92); backdrop-filter: blur(8px); }
   nav .logo { font-family: 'Georgia', serif; font-style: italic; color: #fff; font-size: 19px; }
   nav ul { display: none; list-style: none; gap: 24px; }
   nav ul li a { color: #F4EDE9; font-size: 13px; letter-spacing: 0.5px; }
-  @media (min-width: 760px) {
-    nav ul { display: flex; }
-  }
-  nav .nav-cta {
-    background: #D4537E;
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
+  @media (min-width: 760px) { nav ul { display: flex; } }
+  nav .nav-cta { background: #D4537E; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; }
   .hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    padding: 6rem 1.5rem 3rem;
+    position: relative; min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 6rem 1.5rem 3rem;
   }
   .hero-bg { position: absolute; inset: 0; z-index: 0; }
-  .hero-bg img {
-    width: 100%; height: 100%; object-fit: cover;
-    animation: kenburns 20s ease-in-out infinite alternate;
-  }
-  @keyframes kenburns {
-    0% { transform: scale(1) translate(0,0); }
-    100% { transform: scale(1.18) translate(-2%,-1%); }
-  }
-  .hero-bg::after {
-    content: ''; position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(75,21,40,0.6) 0%, rgba(75,21,40,0.4) 35%, rgba(40,12,22,0.85) 100%);
-  }
+  .hero-bg img { width: 100%; height: 100%; object-fit: cover; animation: kenburns 20s ease-in-out infinite alternate; }
+  @keyframes kenburns { 0% { transform: scale(1) translate(0,0); } 100% { transform: scale(1.18) translate(-2%,-1%); } }
+  .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(75,21,40,0.6) 0%, rgba(75,21,40,0.4) 35%, rgba(40,12,22,0.85) 100%); }
   .hero-content { position: relative; z-index: 1; max-width: 640px; }
-  .hero-eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
-    color: #F0997B; margin-bottom: 1.2rem;
-  }
-  .hero h1 {
-    font-family: 'Georgia', serif; font-weight: normal;
-    font-size: 48px; color: #fff; line-height: 1.15; margin-bottom: 1.4rem;
-    text-shadow: 0 2px 24px rgba(0,0,0,0.35);
-  }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #F0997B; margin-bottom: 1.2rem; }
+  .hero h1 { font-family: 'Georgia', serif; font-weight: normal; font-size: 48px; color: #fff; line-height: 1.15; margin-bottom: 1.4rem; text-shadow: 0 2px 24px rgba(0,0,0,0.35); }
   .hero h1 em { font-style: italic; color: #F5C4B3; }
-
-  .hero-historia {
-    display: flex; align-items: center; gap: 14px; text-align: left;
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 16px; padding: 14px 18px; margin-bottom: 1.8rem;
-  }
-  .hero-historia img {
-    width: 64px; height: 64px; border-radius: 50%; object-fit: cover;
-    flex-shrink: 0; border: 2px solid rgba(255,255,255,0.6);
-  }
+  .hero-historia { text-align: left; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 14px 18px; margin-bottom: 1.8rem; }
   .hero-historia p { font-size: 13px; color: #F4EDE9; line-height: 1.55; margin: 0; }
   .hero-historia p strong { color: #F5C4B3; }
-
   .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem; }
-  .btn-primary {
-    background: #D4537E; color: #fff; padding: 14px 28px; border-radius: 30px;
-    font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgba(212,83,126,0.4);
-  }
-  .btn-ghost {
-    border: 1px solid rgba(255,255,255,0.5); color: #fff; padding: 14px 28px; border-radius: 30px;
-    font-size: 14px; font-weight: 600;
-  }
-  .hero-stats {
-    display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
-    padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);
-  }
+  .btn-primary { background: #D4537E; color: #fff; padding: 14px 28px; border-radius: 30px; font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgba(212,83,126,0.4); }
+  .btn-ghost { border: 1px solid rgba(255,255,255,0.5); color: #fff; padding: 14px 28px; border-radius: 30px; font-size: 14px; font-weight: 600; }
+  .hero-stats { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2); }
   .hero-stats .stat { text-align: center; }
   .hero-stats .stat .num { font-size: 22px; font-weight: 600; color: #fff; }
   .hero-stats .stat .label { font-size: 11px; color: #F0997B; letter-spacing: 0.5px; }
-
   .section { padding: 5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-  .section-eyebrow {
-    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
-    color: #D4537E; font-weight: 600; margin-bottom: 0.6rem;
-  }
-  .section h2 {
-    font-family: 'Georgia', serif; font-size: 34px; color: #4B1528; margin-bottom: 0.8rem;
-  }
+  .section-eyebrow { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #D4537E; font-weight: 600; margin-bottom: 0.6rem; }
+  .section h2 { font-family: 'Georgia', serif; font-size: 34px; color: #4B1528; margin-bottom: 0.8rem; }
   .section h2 em { font-style: italic; color: #99355A; }
   .section .section-sub { color: #5F5E5A; font-size: 14px; max-width: 520px; margin-bottom: 2rem; }
   .center { text-align: center; }
   .center .section-sub { margin-left: auto; margin-right: auto; }
-
   .video-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-top: 1.5rem; }
-  .video-wrap video {
-    width: 100%; max-width: 460px; border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(75,21,40,0.18);
-  }
-
+  .video-wrap video { width: 100%; max-width: 460px; border-radius: 16px; box-shadow: 0 10px 30px rgba(75,21,40,0.18); }
   .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 2rem; justify-content: center; }
-  .filter-btn {
-    padding: 8px 18px; border-radius: 20px; border: 1px solid #E8D5DC;
-    background: #fff; font-size: 13px; color: #5F5E5A; cursor: pointer;
-  }
+  .filter-btn { padding: 8px 18px; border-radius: 20px; border: 1px solid #E8D5DC; background: #fff; font-size: 13px; color: #5F5E5A; cursor: pointer; }
   .filter-btn.active { background: #99355A; color: #fff; border-color: #99355A; }
-
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-  .card {
-    background: #fff; border-radius: 16px; overflow: hidden;
-    box-shadow: 0 4px 20px rgba(75,21,40,0.07); transition: transform 0.25s;
-  }
+  .card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(75,21,40,0.07); transition: transform 0.25s; }
   .card-img-wrap { position: relative; aspect-ratio: 4/5; overflow: hidden; background: #f0e6ea; }
   .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
-  .card-tag-float {
-    position: absolute; top: 12px; left: 12px;
-    background: rgba(255,255,255,0.92); color: #993C1D;
-    font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase;
-    padding: 4px 12px; border-radius: 16px; font-weight: 600;
-  }
+  .card-tag-float { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.92); color: #993C1D; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 16px; font-weight: 600; }
   .card-body { padding: 16px 18px 18px; }
   .card-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: #2C2C2A; }
   .card-desc { font-size: 13px; color: #888780; margin-bottom: 10px; }
   .card-foot { display: flex; align-items: center; justify-content: space-between; }
   .card-price { font-size: 16px; font-weight: 700; color: #99355A; }
   .card-price small { font-size: 11px; font-weight: 400; color: #888780; display: block; }
-  .card-btn {
-    font-size: 12px; font-weight: 600; color: #99355A; border: 1px solid #E8D5DC;
-    padding: 7px 14px; border-radius: 18px;
-  }
-
+  .card-btn { font-size: 12px; font-weight: 600; color: #99355A; border: 1px solid #E8D5DC; padding: 7px 14px; border-radius: 18px; }
   .gallery-strip { overflow: hidden; padding: 3rem 0; background: #4B1528; }
-  .gallery-track {
-    display: flex; gap: 14px; animation: scroll 32s linear infinite;
-    width: max-content;
-  }
+  .gallery-track { display: flex; gap: 14px; animation: scroll 32s linear infinite; width: max-content; }
   .gallery-track img { width: 220px; height: 280px; object-fit: cover; border-radius: 12px; }
   @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .gallery-strip-head { text-align: center; color: #F4EDE9; padding-bottom: 1.5rem; }
   .gallery-strip-head .section-eyebrow { color: #F0997B; }
   .gallery-strip-head h2 { color: #fff; font-family: 'Georgia', serif; font-size: 28px; }
-
   .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
   .why-item { padding: 1.5rem 0; }
   .why-num { font-size: 13px; color: #D4537E; font-weight: 700; margin-bottom: 0.6rem; }
   .why-item h4 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: #4B1528; }
   .why-item p { font-size: 13px; color: #5F5E5A; }
-
   .tailor-section { background: linear-gradient(135deg, #4B1528 0%, #72243E 100%); padding: 4rem 1.5rem; }
   .tailor-box { max-width: 640px; margin: 0 auto; text-align: center; color: #F4C0D1; }
   .tailor-box .icon { font-size: 34px; margin-bottom: 0.8rem; }
   .tailor-box h3 { font-family: 'Georgia', serif; font-style: italic; color: #fff; font-size: 26px; margin-bottom: 1rem; }
   .tailor-box p { font-size: 14px; line-height: 1.7; margin-bottom: 1.2rem; }
   .tailor-box .addr { font-weight: 600; color: #fff; font-size: 14px; }
-
   .location-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
   @media (min-width: 760px) { .location-grid { grid-template-columns: 1fr 1fr; } }
   .info-list { display: flex; flex-direction: column; gap: 18px; }
   .info-item { display: flex; gap: 14px; }
-  .info-item .ico {
-    width: 40px; height: 40px; border-radius: 50%; background: #FAECE7;
-    display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
-  }
+  .info-item .ico { width: 40px; height: 40px; border-radius: 50%; background: #FAECE7; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
   .info-item h4 { font-size: 14px; font-weight: 600; color: #4B1528; margin-bottom: 2px; }
   .info-item p { font-size: 13px; color: #5F5E5A; }
   .map-embed { border-radius: 16px; overflow: hidden; min-height: 280px; }
   .map-embed iframe { width: 100%; height: 100%; min-height: 280px; border: 0; }
-
   .cta-band { background: #FAECE7; padding: 4rem 1.5rem; text-align: center; }
   .cta-band h2 { font-family: 'Georgia', serif; font-style: italic; color: #4B1528; font-size: 30px; margin-bottom: 1.5rem; }
   .cta-band .hero-ctas { margin-bottom: 0; }
   .cta-band .btn-ghost { border-color: #99355A; color: #99355A; }
-
   footer { background: #2C0E1A; color: #C9A0AE; padding: 3rem 1.5rem 2rem; text-align: center; }
   footer .footer-name { font-family: 'Georgia', serif; font-style: italic; font-size: 24px; color: #fff; margin-bottom: 1rem; }
   footer .footer-links { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 13px; }
   footer .footer-socials { display: flex; gap: 14px; justify-content: center; margin-bottom: 1.2rem; }
-  footer .footer-socials a {
-    width: 36px; height: 36px; border-radius: 50%; border: 1px solid #5A3340;
-    display: flex; align-items: center; justify-content: center; font-size: 15px;
-  }
+  footer .footer-socials a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid #5A3340; display: flex; align-items: center; justify-content: center; font-size: 15px; }
   footer .footer-bottom { font-size: 12px; color: #7A5462; }
-
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 34px; }
-    .section h2 { font-size: 26px; }
-    .hero-historia { flex-direction: column; text-align: center; }
-  }
+  @media (max-width: 600px) { .hero h1 { font-size: 34px; } .section h2 { font-size: 26px; } }
 </style>
 </head>
 <body>
@@ -231,7 +125,6 @@
   <a class="nav-cta" href="https://wa.me/573248889587" target="_blank">WhatsApp</a>
 </nav>
 
-<!-- HERO con historia + foto -->
 <section class="hero" id="inicio">
   <div class="hero-bg">
     <img src="img/IMG_7390.jpg" alt="Entrada de Angel D' Rouse Boutique">
@@ -239,16 +132,13 @@
   <div class="hero-content">
     <div class="hero-eyebrow">✦ Verbenal Norte, Bogotá</div>
     <h1>Moda con <em>identidad</em>,<br>hecha a tu medida</h1>
-
     <div class="hero-historia">
-      <img src="img/hija_restaurante.jpg" alt="Fundadora de Angel D' Rouse">
       <p>
         Angel D' Rouse nació de <strong>tres generaciones de mujeres</strong> con un mismo amor
         por la costura: de fabricantes de ropa a boutique de barrio, con un propósito que va más
         allá de vender — que cada mujer se sienta segura y bella con lo que lleva puesto.
       </p>
     </div>
-
     <div class="hero-ctas">
       <a class="btn-primary" href="https://wa.me/573248889587" target="_blank">Pedir por WhatsApp</a>
       <a class="btn-ghost" href="#coleccion">Ver colección</a>
@@ -261,7 +151,6 @@
   </div>
 </section>
 
-<!-- VIDEO -->
 <section class="section center" id="video">
   <p class="section-eyebrow">Recorre la boutique</p>
   <h2>Así es <em class="serif">Angel D' Rouse</em></h2>
@@ -276,238 +165,88 @@
   </div>
 </section>
 
-<!-- COLECCIÓN -->
 <section class="section center" id="coleccion">
   <p class="section-eyebrow">Lo que hacemos</p>
   <h2>Nuestra <em class="serif">colección</em></h2>
   <p class="section-sub">Diseños jovial y de tendencia, en colores únicos. Escríbenos por WhatsApp para precios y disponibilidad de cada prenda.</p>
-
   <div class="filters">
     <button class="filter-btn active" data-filter="todos">Todos</button>
-    <button class="filter-btn" data-filter="gabanes">Gabanes</button>
-    <button class="filter-btn" data-filter="cuerina">Chaquetas en cuerina</button>
-    <button class="filter-btn" data-filter="blazers">Blazers</button>
     <button class="filter-btn" data-filter="conjuntos">Conjuntos</button>
-    <button class="filter-btn" data-filter="pantalones">Pantalones</button>
-    <button class="filter-btn" data-filter="blusas">Blusas</button>
-    <button class="filter-btn" data-filter="vestidos">Vestidos</button>
-    <button class="filter-btn" data-filter="faldas">Faldas</button>
-    <button class="filter-btn" data-filter="jeans">Jeans</button>
+    <button class="filter-btn" data-filter="abrigos">Abrigos</button>
+    <button class="filter-btn" data-filter="fiesta">Fiesta</button>
     <button class="filter-btn" data-filter="postres">Postres</button>
   </div>
-
   <div class="grid" id="catalog-grid">
-
-    <div class="card" data-cat="gabanes">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Gabanes</span>
-        <img src="img/gaban_cuadros.jpg" alt="Gabán a cuadros marrón y beige">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Gabán a cuadros</div>
-        <div class="card-desc">Tallas S, M, L, XL.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="gabanes">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Gabanes</span>
-        <img src="img/gaban_gris.jpg" alt="Gabán largo gris">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Gabán largo gris</div>
-        <div class="card-desc">Tallas S, M, L, XL.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="gabanes">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Gabanes</span>
-        <img src="img/gaban_pataDeGallo.jpg" alt="Gabán pata de gallo blanco y negro">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Gabán pata de gallo</div>
-        <div class="card-desc">Tallas S, M, L, XL.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="gabanes">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Gabanes</span>
-        <img src="img/gaban_marron.jpg" alt="Gabán marrón largo">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Gabán marrón largo</div>
-        <div class="card-desc">Tallas S, M, L, XL.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="cuerina">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Cuerina</span>
-        <img src="img/cuerina_vinotinto.jpg" alt="Gabardina en cuerina vinotinto">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Gabardina vinotinto</div>
-        <div class="card-desc">Con cinturón, disponible en almacén.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="cuerina">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Cuerina</span>
-        <img src="img/cuerina_negra_peluche.jpg" alt="Abrigo en cuerina negro con forro de peluche">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Abrigo cuerina con peluche</div>
-        <div class="card-desc">Tallas S, M, L, XL.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="blazers">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Blazers</span>
-        <img src="img/blazer_negro_camel.jpg" alt="Blazers cortos negro y camel">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Blazer corto</div>
-        <div class="card-desc">Disponible en negro y camel.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
     <div class="card" data-cat="conjuntos">
       <div class="card-img-wrap">
         <span class="card-tag-float">Conjuntos</span>
-        <img src="img/conjunto_prestige_club.jpg" alt="Conjunto deportivo Prestige Club crema">
+        <img src="img/IMG_7389.jpg" alt="Conjunto top y falda en colores tendencia">
       </div>
       <div class="card-body">
-        <div class="card-title">Conjunto deportivo Prestige Club</div>
-        <div class="card-desc">Sudadera + pantalón, color crema.</div>
+        <div class="card-title">Conjunto top y falda</div>
+        <div class="card-desc">Diseño jovial en colores tendencia, tela suave de alta calidad.</div>
         <div class="card-foot">
           <div class="card-price">Consultar<small>vía WhatsApp</small></div>
           <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
         </div>
       </div>
     </div>
-
+    <div class="card" data-cat="abrigos">
+      <div class="card-img-wrap">
+        <span class="card-tag-float">Abrigos</span>
+        <img src="img/IMG_7388.jpg" alt="Jeans y abrigos en exhibición">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Jeans y abrigos</div>
+        <div class="card-desc">Variedad en denim y abrigos de paño, ideales para looks de entretiempo.</div>
+        <div class="card-foot">
+          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
+          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
+        </div>
+      </div>
+    </div>
     <div class="card" data-cat="conjuntos">
       <div class="card-img-wrap">
-        <span class="card-tag-float">Conjuntos</span>
-        <img src="img/conjunto_hojas_negro.jpg" alt="Conjunto top y pantalón bordado de hojas">
+        <span class="card-tag-float">Colección</span>
+        <img src="img/IMG_7383.jpg" alt="Variedad de blusas y vestidos">
       </div>
       <div class="card-body">
-        <div class="card-title">Conjunto bordado de hojas</div>
-        <div class="card-desc">Top + pantalón, negro con bordado crema.</div>
+        <div class="card-title">Blusas y vestidos</div>
+        <div class="card-desc">Amplia variedad de colores y estilos para toda ocasión.</div>
         <div class="card-foot">
           <div class="card-price">Consultar<small>vía WhatsApp</small></div>
           <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
         </div>
       </div>
     </div>
-
-    <div class="card" data-cat="pantalones">
+    <div class="card" data-cat="fiesta">
       <div class="card-img-wrap">
-        <span class="card-tag-float">Pantalones</span>
-        <img src="img/pantalon_encaje.jpg" alt="Pantalón de encaje café">
+        <span class="card-tag-float">Fiesta</span>
+        <img src="img/IMG_7392.jpg" alt="Vestidos de fiesta elegantes">
       </div>
       <div class="card-body">
-        <div class="card-title">Pantalón de encaje</div>
-        <div class="card-desc">Color café, tela de encaje.</div>
+        <div class="card-title">Vestidos de fiesta</div>
+        <div class="card-desc">Diseños elegantes para esa ocasión especial.</div>
         <div class="card-foot">
           <div class="card-price">Consultar<small>vía WhatsApp</small></div>
           <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
         </div>
       </div>
     </div>
-
-    <div class="card" data-cat="blusas">
+    <div class="card" data-cat="conjuntos">
       <div class="card-img-wrap">
-        <span class="card-tag-float">Blusas</span>
-        <img src="img/blusas_pastel.jpg" alt="Blusas en colores pastel">
+        <span class="card-tag-float">Casual</span>
+        <img src="img/IMG_7391.jpg" alt="Faldas y tops en colores variados">
       </div>
       <div class="card-body">
-        <div class="card-title">Blusas en tonos pastel</div>
-        <div class="card-desc">Varios colores disponibles.</div>
+        <div class="card-title">Faldas y tops</div>
+        <div class="card-desc">Paleta de colores suaves, perfectos para combinar.</div>
         <div class="card-foot">
           <div class="card-price">Consultar<small>vía WhatsApp</small></div>
           <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
         </div>
       </div>
     </div>
-
-    <div class="card" data-cat="vestidos">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Vestidos</span>
-        <img src="img/vestido_rosa.jpg" alt="Vestido rosa ribeteado largo">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Vestido rosa ribeteado</div>
-        <div class="card-desc">Largo, corte ajustado.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="faldas">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Faldas</span>
-        <img src="img/falda_cafe.jpg" alt="Falda café tableada">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Falda café tableada</div>
-        <div class="card-desc">Con top crema incluido en exhibición.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-cat="jeans">
-      <div class="card-img-wrap">
-        <span class="card-tag-float">Jeans</span>
-        <img src="img/jeans_rack.jpg" alt="Jeans azules varias tallas">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Jeans clásicos</div>
-        <div class="card-desc">Tallas 6, 8, 10, 12, 14.</div>
-        <div class="card-foot">
-          <div class="card-price">Consultar<small>vía WhatsApp</small></div>
-          <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
-        </div>
-      </div>
-    </div>
-
     <div class="card" data-cat="postres">
       <div class="card-img-wrap">
         <span class="card-tag-float">Postres</span>
@@ -515,48 +254,37 @@
       </div>
       <div class="card-body">
         <div class="card-title">Postres artesanales</div>
-        <div class="card-desc">Flan, milhojas, mocaccino y tiramisú.</div>
+        <div class="card-desc">Flan, milhojas, mocaccino y tiramisú. Servicio adicional de la boutique.</div>
         <div class="card-foot">
           <div class="card-price">$12.000<small>por porción</small></div>
           <a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- GALERÍA -->
 <div class="gallery-strip" id="galeria">
   <div class="gallery-strip-head">
     <p class="section-eyebrow">Nuestro espacio</p>
-    <h2>Quién está detrás de <em>Angel D' Rouse</em></h2>
+    <h2>Conoce <em>la boutique</em></h2>
   </div>
   <div class="gallery-track">
-    <img src="img/hija_local.jpg" alt="La dueña en la boutique">
     <img src="img/IMG_7383.jpg" alt="Interior de la boutique">
-    <img src="img/hija_parque.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7388.jpg" alt="Rack de ropa">
-    <img src="img/hija_rio.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7389.jpg" alt="Colección de colores">
-    <img src="img/hija_restaurante.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7390.jpg" alt="Entrada de la boutique">
-    <img src="img/hija_columnas.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7391.jpg" alt="Espejo y exhibición">
-    <img src="img/hija_local.jpg" alt="La dueña en la boutique">
+    <img src="img/IMG_7392.jpg" alt="Vestidos y blusas">
     <img src="img/IMG_7383.jpg" alt="Interior de la boutique">
-    <img src="img/hija_parque.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7388.jpg" alt="Rack de ropa">
-    <img src="img/hija_rio.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7389.jpg" alt="Colección de colores">
-    <img src="img/hija_restaurante.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7390.jpg" alt="Entrada de la boutique">
-    <img src="img/hija_columnas.jpg" alt="La dueña de Angel D' Rouse">
     <img src="img/IMG_7391.jpg" alt="Espejo y exhibición">
+    <img src="img/IMG_7392.jpg" alt="Vestidos y blusas">
   </div>
 </div>
 
-<!-- NOSOTROS / POR QUÉ -->
 <section class="section" id="nosotros">
   <p class="section-eyebrow center">Por qué elegirnos</p>
   <h2 class="center">Más que ropa, <em class="serif">tu estilo</em></h2>
@@ -584,7 +312,6 @@
   </div>
 </section>
 
-<!-- CONFECCIÓN A MEDIDA -->
 <section class="tailor-section">
   <div class="tailor-box">
     <div class="icon">✂️</div>
@@ -594,12 +321,10 @@
   </div>
 </section>
 
-<!-- UBICACIÓN -->
 <section class="section" id="ubicacion">
   <p class="section-eyebrow center">Encuéntranos</p>
   <h2 class="center">Estamos en <em class="serif">Verbenal Norte</em></h2>
   <p class="section-sub center" style="margin: 0 auto 2.5rem;">Confirma horarios especiales por WhatsApp antes de tu visita.</p>
-
   <div class="location-grid">
     <div class="info-list">
       <div class="info-item">
@@ -624,7 +349,6 @@
   </div>
 </section>
 
-<!-- CTA FINAL -->
 <section class="cta-band">
   <h2>¿Lista para tu próximo look?</h2>
   <div class="hero-ctas">
@@ -633,7 +357,6 @@
   </div>
 </section>
 
-<!-- RESEÑAS GOOGLE MAPS -->
 <div style="background-color: #FAECE7; padding: 4rem 1.5rem; text-align: center; border-top: 1px solid #E8D5DC;">
   <h2 style="font-family: 'Georgia', serif; font-style: italic; color: #4B1528; font-size: 30px; margin-bottom: 1rem;">¿Te encantó tu experiencia? ✨</h2>
   <p style="color: #5F5E5A; max-width: 600px; margin: 0 auto 20px; font-size: 14px;">Tu opinión vale oro para nosotros. Ayúdanos a seguir creciendo en el barrio dejando una calificación de 5 estrellas en Google.</p>
@@ -665,7 +388,6 @@
     if (window.scrollY > 60) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
   });
-
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('#catalog-grid .card');
   buttons.forEach(btn => {
@@ -674,11 +396,8 @@
       btn.classList.add('active');
       const filter = btn.dataset.filter;
       cards.forEach(card => {
-        if (filter === 'todos' || card.dataset.cat === filter) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
+        if (filter === 'todos' || card.dataset.cat === filter) { card.style.display = ''; }
+        else { card.style.display = 'none'; }
       });
     });
   });
