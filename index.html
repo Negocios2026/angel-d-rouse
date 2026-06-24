@@ -1,106 +1,3 @@
-Saltar al contenido
-Negocios2026
-ángel despertado
-Navegación del repositorio
-Código
-Asuntos
-Solicitudes de extracción
-Agentes
-Comportamiento
-Proyectos
-Wiki
-Seguridad y calidad
-Perspectivas
-Ajustes
-Archivos
-Ir al archivo
-t
-T
-imagen
-índice.html
-video_fondo.mp4
-video_invitacion.mp4
-ángel despertado
-/
-index.html
-en
-principal
-
-Editar
-
-Avance
-Modo de sangría
-
-Espacios
-Tamaño de la sangría
-
-2
-Modo de ajuste de línea
-
-Sin envoltura
-Editar el contenido del archivo index.html
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -113,11 +10,11 @@ Editar el contenido del archivo index.html
   body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #FBF6F2; color: #2C2C2A; line-height: 1.6; }
   .serif { font-family: 'Georgia', serif; font-style: italic; }
   a { color: inherit; text-decoration: none; }
-  nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: rgba(75,21,40,0.0); transition: background 0.3s; }
-  .ticker { position: fixed; top: 0; left: 0; right: 0; height: 34px; z-index: 60; background: #4B1528; overflow: hidden; white-space: nowrap; display: flex; align-items: center; }
-  .ticker-track { display: inline-flex; gap: 50px; animation: tickerScroll 16s linear infinite; padding-left: 50px; }
-  .ticker-track span { color: #F4C0D1; font-size: 12px; letter-spacing: 0.5px; }
-  .ticker-track span strong { color: #fff; }
+  nav { position: fixed; top: 42px; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: rgba(75,21,40,0.0); transition: background 0.3s; }
+  .ticker { position: fixed; top: 0; left: 0; right: 0; height: 42px; z-index: 60; background: #D4537E; overflow: hidden; white-space: nowrap; display: flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .ticker-track { display: inline-flex; gap: 60px; animation: tickerScroll 16s linear infinite; padding-left: 60px; }
+  .ticker-track span { color: #fff; font-size: 14px; font-weight: 500; letter-spacing: 0.3px; }
+  .ticker-track span strong { color: #4B1528; font-weight: 800; }
   @keyframes tickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   nav.scrolled { background: rgba(75,21,40,0.92); backdrop-filter: blur(8px); }
   nav .logo { display: flex; align-items: center; gap: 8px; }
@@ -127,7 +24,7 @@ Editar el contenido del archivo index.html
   nav ul li a { color: #F4EDE9; font-size: 13px; letter-spacing: 0.5px; }
   @media (min-width: 760px) { nav ul { display: flex; } }
   nav .nav-cta { background: #D4537E; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; }
-  .hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 7.5rem 1.5rem 3rem; }
+  .hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 8.5rem 1.5rem 3rem; }
   .hero-bg { position: absolute; inset: 0; z-index: 0; }
   .hero-bg img { width: 100%; height: 100%; object-fit: cover; animation: kenburns 20s ease-in-out infinite alternate; }
   @keyframes kenburns { 0% { transform: scale(1) translate(0,0); } 100% { transform: scale(1.18) translate(-2%,-1%); } }
@@ -136,9 +33,9 @@ Editar el contenido del archivo index.html
   .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #F0997B; margin-bottom: 1.2rem; }
   .hero h1 { font-family: 'Georgia', serif; font-weight: normal; font-size: 48px; color: #fff; line-height: 1.15; margin-bottom: 1.4rem; text-shadow: 0 2px 24px rgba(0,0,0,0.35); }
   .hero h1 em { font-style: italic; color: #F5C4B3; }
-  .hero-historia { display: flex; align-items: center; gap: 18px; text-align: left; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 14px; margin-bottom: 1.8rem; }
-  .hero-historia img { width: 110px; height: 130px; border-radius: 12px; object-fit: cover; flex-shrink: 0; border: 2px solid rgba(255,255,255,0.6); }
-  .hero-historia p { font-size: 13px; color: #F4EDE9; line-height: 1.55; margin: 0; }
+  .hero-historia { display: flex; flex-direction: column; align-items: center; text-align: center; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 18px; margin-bottom: 1.8rem; }
+  .hero-historia img { width: 200px; height: 240px; border-radius: 12px; object-fit: cover; flex-shrink: 0; border: 3px solid rgba(255,255,255,0.7); margin-bottom: 14px; }
+  .hero-historia p { font-size: 13px; color: #F4EDE9; line-height: 1.55; margin: 0; max-width: 460px; }
   .hero-historia p strong { color: #F5C4B3; }
   .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem; }
   .btn-primary { background: #D4537E; color: #fff; padding: 14px 28px; border-radius: 30px; font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgba(212,83,126,0.4); }
@@ -163,5 +60,295 @@ Editar el contenido del archivo index.html
   .card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(75,21,40,0.07); transition: transform 0.25s; }
   .card-img-wrap { position: relative; aspect-ratio: 4/5; overflow: hidden; background: #f0e6ea; }
   .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
-Úselo Control + Shift + mpara alternar el tabfoco de movimiento de la tecla. Alternativamente, úselo escpara tabpasar al siguiente elemento interactivo de la página.
- 
+  .card-tag-float { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.92); color: #993C1D; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 16px; font-weight: 600; }
+  .card-body { padding: 16px 18px 18px; }
+  .card-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: #2C2C2A; }
+  .card-desc { font-size: 13px; color: #888780; margin-bottom: 10px; }
+  .card-foot { display: flex; align-items: center; justify-content: space-between; }
+  .card-price { font-size: 16px; font-weight: 700; color: #99355A; }
+  .card-price small { font-size: 11px; font-weight: 400; color: #888780; display: block; }
+  .card-btn { font-size: 12px; font-weight: 600; color: #99355A; border: 1px solid #E8D5DC; padding: 7px 14px; border-radius: 18px; }
+  .gallery-strip { overflow: hidden; padding: 3rem 0; background: #4B1528; }
+  .gallery-track { display: flex; gap: 14px; animation: scroll 30s linear infinite; width: max-content; }
+  .gallery-track img { width: 220px; height: 280px; object-fit: cover; border-radius: 12px; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .gallery-strip-head { text-align: center; color: #F4EDE9; padding-bottom: 1.5rem; }
+  .gallery-strip-head .section-eyebrow { color: #F0997B; }
+  .gallery-strip-head h2 { color: #fff; font-family: 'Georgia', serif; font-size: 28px; }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+  .why-item { padding: 1.5rem 0; }
+  .why-num { font-size: 13px; color: #D4537E; font-weight: 700; margin-bottom: 0.6rem; }
+  .why-item h4 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: #4B1528; }
+  .why-item p { font-size: 13px; color: #5F5E5A; }
+  .tailor-section { background: linear-gradient(135deg, #4B1528 0%, #72243E 100%); padding: 4rem 1.5rem; }
+  .tailor-box { max-width: 640px; margin: 0 auto; text-align: center; color: #F4C0D1; }
+  .tailor-box .icon { font-size: 34px; margin-bottom: 0.8rem; }
+  .tailor-box h3 { font-family: 'Georgia', serif; font-style: italic; color: #fff; font-size: 26px; margin-bottom: 1rem; }
+  .tailor-box p { font-size: 14px; line-height: 1.7; margin-bottom: 1.2rem; }
+  .tailor-box .addr { font-weight: 600; color: #fff; font-size: 14px; }
+  .location-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+  @media (min-width: 760px) { .location-grid { grid-template-columns: 1fr 1fr; } }
+  .info-list { display: flex; flex-direction: column; gap: 18px; }
+  .info-item { display: flex; gap: 14px; }
+  .info-item .ico { width: 40px; height: 40px; border-radius: 50%; background: #FAECE7; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .info-item h4 { font-size: 14px; font-weight: 600; color: #4B1528; margin-bottom: 2px; }
+  .info-item p { font-size: 13px; color: #5F5E5A; }
+  .map-embed { border-radius: 16px; overflow: hidden; min-height: 280px; }
+  .map-embed iframe { width: 100%; height: 100%; min-height: 280px; border: 0; }
+  .cta-band { background: #FAECE7; padding: 4rem 1.5rem; text-align: center; }
+  .cta-band h2 { font-family: 'Georgia', serif; font-style: italic; color: #4B1528; font-size: 30px; margin-bottom: 1.5rem; }
+  .cta-band .hero-ctas { margin-bottom: 0; }
+  .cta-band .btn-ghost { border-color: #99355A; color: #99355A; }
+  footer { background: #2C0E1A; color: #C9A0AE; padding: 3rem 1.5rem 2rem; text-align: center; }
+  footer .footer-name { font-family: 'Georgia', serif; font-style: italic; font-size: 24px; color: #fff; margin-bottom: 1rem; }
+  footer .footer-links { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 13px; }
+  footer .footer-socials { display: flex; gap: 14px; justify-content: center; margin-bottom: 1.2rem; }
+  footer .footer-socials a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid #5A3340; display: flex; align-items: center; justify-content: center; font-size: 15px; }
+  footer .footer-bottom { font-size: 12px; color: #7A5462; }
+  @media (max-width: 600px) { .hero h1 { font-size: 34px; } .section h2 { font-size: 26px; } .hero-historia { flex-direction: column; text-align: center; } }
+</style>
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span>🎁 Reclama tu <strong>tarjeta de firmas</strong> en tu primera compra</span>
+    <span>✨ Acumula <strong>10 firmas</strong> y tu siguiente prenda es <strong>GRATIS</strong></span>
+    <span>🎁 Reclama tu <strong>tarjeta de firmas</strong> en tu primera compra</span>
+    <span>✨ Acumula <strong>10 firmas</strong> y tu siguiente prenda es <strong>GRATIS</strong></span>
+    <span>🎁 Reclama tu <strong>tarjeta de firmas</strong> en tu primera compra</span>
+    <span>✨ Acumula <strong>10 firmas</strong> y tu siguiente prenda es <strong>GRATIS</strong></span>
+  </div>
+</div>
+
+<nav id="navbar">
+  <a class="logo" href="#inicio">
+    <img src="img/LOGO.PNG" alt="Angel D' Rouse Boutique">
+    <span>Angel D' Rouse</span>
+  </a>
+  <ul>
+    <li><a href="#coleccion">Colección</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+  </ul>
+  <a class="nav-cta" href="https://wa.me/573248889587" target="_blank">WhatsApp</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <img src="img/FACHADA.jpg" alt="Angel D' Rouse Boutique">
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">✦ Verbenal Norte, Bogotá</div>
+    <h1>Moda con <em>identidad</em>,<br>hecha a tu medida</h1>
+    <div class="hero-historia">
+      <img src="img/FOTO_CEO.JPG" alt="Fundadora de Angel D' Rouse">
+      <p>
+        Angel D' Rouse nació de <strong>tres generaciones de mujeres</strong> con un mismo amor
+        por la costura: de fabricantes de ropa a boutique de barrio, con un propósito que va más
+        allá de vender — que cada mujer se sienta segura y bella con lo que lleva puesto.
+      </p>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="https://wa.me/573248889587" target="_blank">Pedir por WhatsApp</a>
+      <a class="btn-ghost" href="#coleccion">Ver colección</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">3</div><div class="label">Generaciones</div></div>
+      <div class="stat"><div class="num">100%</div><div class="label">A tu medida</div></div>
+      <div class="stat"><div class="num">Bogotá</div><div class="label">Verbenal Norte</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section center" id="video">
+  <p class="section-eyebrow">Te invitamos</p>
+  <h2>Conoce <em class="serif">Angel D' Rouse</em></h2>
+  <p class="section-sub center" style="margin: 0 auto;">Mira de cerca nuestro espacio en Verbenal Norte.</p>
+  <div class="video-wrap">
+    <video controls autoplay muted loop playsinline poster="img/FACHADA.jpg">
+      <source src="video_fondo.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop playsinline poster="img/FACHADA.jpg">
+      <source src="video_invitacion.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="section center" id="coleccion">
+  <p class="section-eyebrow">Lo que hacemos</p>
+  <h2>Nuestra <em class="serif">colección</em></h2>
+  <p class="section-sub">Diseños jovial y de tendencia, en colores únicos. Escríbenos por WhatsApp para precios y disponibilidad de cada prenda.</p>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="todos">Todos</button>
+    <button class="filter-btn" data-filter="abrigos">Abrigos</button>
+    <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+    <button class="filter-btn" data-filter="faldas">Faldas</button>
+    <button class="filter-btn" data-filter="gabanes">Gabanes</button>
+    <button class="filter-btn" data-filter="jeans">Jeans</button>
+    <button class="filter-btn" data-filter="pantalones">Pantalones</button>
+    <button class="filter-btn" data-filter="vestidos">Vestidos</button>
+  </div>
+  <div class="grid" id="catalog-grid">
+    <div class="card" data-cat="abrigos">
+      <div class="card-img-wrap"><span class="card-tag-float">Abrigos</span><img src="img/CATEGORIA_ABRIGOS.jpeg" alt="Abrigos"></div>
+      <div class="card-body"><div class="card-title">Abrigos</div><div class="card-desc">Variedad de estilos y colores.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+    <div class="card" data-cat="accesorios">
+      <div class="card-img-wrap"><span class="card-tag-float">Accesorios</span><img src="img/CATEGORIA_ACCESORIOS.jpeg" alt="Accesorios"></div>
+      <div class="card-body"><div class="card-title">Accesorios</div><div class="card-desc">Complementos para cada look.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+    <div class="card" data-cat="faldas">
+      <div class="card-img-wrap"><span class="card-tag-float">Faldas</span><img src="img/CATEGORIA_FALDAS.jpeg" alt="Faldas"></div>
+      <div class="card-body"><div class="card-title">Faldas</div><div class="card-desc">Diseños para toda ocasión.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+    <div class="card" data-cat="gabanes">
+      <div class="card-img-wrap"><span class="card-tag-float">Gabanes</span><img src="img/CATEGORIA_GABANES%20.jpeg" alt="Gabanes"></div>
+      <div class="card-body"><div class="card-title">Gabanes</div><div class="card-desc">Abrigos largos de paño.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+    <div class="card" data-cat="jeans">
+      <div class="card-img-wrap"><span class="card-tag-float">Jeans</span><img src="img/CATEGORIA_JEANS.jpeg" alt="Jeans"></div>
+      <div class="card-body"><div class="card-title">Jeans</div><div class="card-desc">Varias tallas disponibles.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+    <div class="card" data-cat="pantalones">
+      <div class="card-img-wrap"><span class="card-tag-float">Pantalones</span><img src="img/CATEGORIA_PANTALONES.jpeg" alt="Pantalones"></div>
+      <div class="card-body"><div class="card-title">Pantalones</div><div class="card-desc">Cómodos y elegantes.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+    <div class="card" data-cat="vestidos">
+      <div class="card-img-wrap"><span class="card-tag-float">Vestidos</span><img src="img/CATEGORIA_VESTIDOS.jpeg" alt="Vestidos"></div>
+      <div class="card-body"><div class="card-title">Vestidos</div><div class="card-desc">Para toda ocasión especial.</div>
+        <div class="card-foot"><div class="card-price">Consultar<small>vía WhatsApp</small></div><a class="card-btn" href="https://wa.me/573248889587" target="_blank">Pedir</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-strip" id="galeria">
+  <div class="gallery-strip-head">
+    <p class="section-eyebrow">Nuestro espacio</p>
+    <h2>Conoce <em>la boutique</em></h2>
+  </div>
+  <div class="gallery-track">
+    <img src="img/CATEGORIA_ABRIGOS.jpeg" alt="Abrigos">
+    <img src="img/CATEGORIA_ACCESORIOS.jpeg" alt="Accesorios">
+    <img src="img/CATEGORIA_FALDAS.jpeg" alt="Faldas">
+    <img src="img/CATEGORIA_GABANES%20.jpeg" alt="Gabanes">
+    <img src="img/CATEGORIA_JEANS.jpeg" alt="Jeans">
+    <img src="img/CATEGORIA_PANTALONES.jpeg" alt="Pantalones">
+    <img src="img/CATEGORIA_VESTIDOS.jpeg" alt="Vestidos">
+    <img src="img/CATEGORIA_ABRIGOS.jpeg" alt="Abrigos">
+    <img src="img/CATEGORIA_ACCESORIOS.jpeg" alt="Accesorios">
+    <img src="img/CATEGORIA_FALDAS.jpeg" alt="Faldas">
+    <img src="img/CATEGORIA_GABANES%20.jpeg" alt="Gabanes">
+    <img src="img/CATEGORIA_JEANS.jpeg" alt="Jeans">
+    <img src="img/CATEGORIA_PANTALONES.jpeg" alt="Pantalones">
+    <img src="img/CATEGORIA_VESTIDOS.jpeg" alt="Vestidos">
+  </div>
+</div>
+
+<section class="section" id="nosotros">
+  <p class="section-eyebrow center">Por qué elegirnos</p>
+  <h2 class="center">Más que ropa, <em class="serif">tu estilo</em></h2>
+  <div class="why-grid" style="margin-top: 2rem;">
+    <div class="why-item"><div class="why-num">01</div><h4>Diseños uniques</h4><p>Cada prenda combina tendencia con personalidad propia, en colores que no encuentras en cualquier lugar.</p></div>
+    <div class="why-item"><div class="why-num">02</div><h4>Confección a medida</h4><p>Si lo que buscas no está en exhibición, lo hacemos a tu medida en el mismo almacén.</p></div>
+    <div class="why-item"><div class="why-num">03</div><h4>Telas de calidad</h4><p>Trabajamos con telas nacionales e importadas seleccionadas para que cada prenda dure y se sienta bien.</p></div>
+    <div class="why-item"><div class="why-num">04</div><h4>En el corazón de Verbenal</h4><p>Fácil acceso para quienes viven o visitan el norte de Bogotá.</p></div>
+  </div>
+</section>
+
+<section class="tailor-section">
+  <div class="tailor-box">
+    <div class="icon">✂️</div>
+    <h3>Confección a medida</h3>
+    <p>Para la confección a medida, las medidas se toman directamente aquí en el almacén — te invitamos a visitarnos en Angel D' Rouse Boutique, de lunes a sábado 9am-9pm o domingos/festivos 10am-8pm. ¡Te esperamos!</p>
+    <p class="addr">📍 Angel D' Rouse Boutique, Verbenal Norte, Bogotá</p>
+  </div>
+</section>
+
+<section class="section" id="ubicacion">
+  <p class="section-eyebrow center">Encuéntranos</p>
+  <h2 class="center">Estamos en <em class="serif">Verbenal Norte</em></h2>
+  <p class="section-sub center" style="margin: 0 auto 2.5rem;">Confirma horarios especiales por WhatsApp antes de tu visita.</p>
+  <div class="location-grid">
+    <div class="info-list">
+      <div class="info-item"><div class="ico">📍</div><div><h4>Ubicación</h4><p>Angel D' Rouse Boutique, Bogotá, Colombia</p></div></div>
+      <div class="info-item"><div class="ico">🕐</div><div><h4>Horario</h4><p>Lunes a sábado: 9:00am – 9:00pm<br>Domingos y festivos: 10:00am – 8:00pm</p></div></div>
+      <div class="info-item"><div class="ico">📱</div><div><h4>WhatsApp</h4><p>+57 324 888 9587</p></div></div>
+      <div style="display:flex; gap:12px; margin-top: 0.5rem;"><a class="btn-primary" href="https://wa.me/573248889587" target="_blank">Escribir por WhatsApp</a></div>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0269888187904!2d-74.03798262487307!3d4.765290141093958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85dc457497e9%3A0x24145eb737d2ca40!2sAngel%20D&#39;%20Rouse%20Boutique!5e0!3m2!1ses-419!2sco!4v1782230698362!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>¿Lista para tu próximo look?</h2>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="https://wa.me/573248889587" target="_blank">Escribir por WhatsApp</a>
+    <a class="btn-ghost" href="#coleccion">Ver colección</a>
+  </div>
+</section>
+
+<div style="background-color: #FAECE7; padding: 4rem 1.5rem; text-align: center; border-top: 1px solid #E8D5DC;">
+  <h2 style="font-family: 'Georgia', serif; font-style: italic; color: #4B1528; font-size: 30px; margin-bottom: 1rem;">¿Te encantó tu experiencia? ✨</h2>
+  <p style="color: #5F5E5A; max-width: 600px; margin: 0 auto 20px; font-size: 14px;">Tu opinión vale oro para nosotros. Ayúdanos a seguir creciendo en el barrio dejando una calificación de 5 estrellas en Google.</p>
+  <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+    <a class="btn-primary" href="https://www.google.com/maps/place/Angel+D'+Rouse+Boutique/data=!4m2!3m1!1s0x8e3f85dc457497e9:0x24145eb737d2ca40" target="_blank">⭐ Calificar en Google Maps</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-name">Angel D' Rouse Boutique</div>
+  <div class="footer-links">
+    <a href="#coleccion">Colección</a>
+    <a href="#galeria">Galería</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#ubicacion">Ubicación</a>
+  </div>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/angeldrouseshop/" target="_blank">IG</a>
+    <a href="https://web.facebook.com/profile.php?id=61591400095695" target="_blank">FB</a>
+    <a href="https://www.tiktok.com/@angeldrouse" target="_blank">TT</a>
+    <a href="https://wa.me/573248889587" target="_blank">📱</a>
+  </div>
+  <div class="footer-bottom">Angel D' Rouse Boutique · Verbenal Norte, Bogotá</div>
+</footer>
+
+<script>
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('#catalog-grid .card');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'todos' || card.dataset.cat === filter) { card.style.display = ''; }
+        else { card.style.display = 'none'; }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
